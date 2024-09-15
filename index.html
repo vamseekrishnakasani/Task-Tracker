@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li class="active" onclick="switchSection('profile')"><i class="fas fa-user"></i> Profile</li>
+            <li onclick="switchSection('about')"><i class="fas fa-info-circle"></i> About</li>
+            <li onclick="switchSection('tasks')"><i class="fas fa-tasks"></i> Tasks</li>
+            <li onclick="switchSection('settings')"><i class="fas fa-cog"></i> Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main">
+        <!-- Profile Section -->
+        <div id="profile" class="section">
+            <h2>Profile</h2>
+            <p>profile details...</p>
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="section hidden">
+            <h2>About</h2>
+            <p>Information about this dashboard...</p>
+        </div>
+
+        <!-- Tasks Section -->
+        <div id="tasks" class="section hidden">
+            <h2>Tasks</h2>
+            <div class="task-actions">
+                <input type="text" id="taskInput" placeholder="Add a new task">
+                <input type="date" id="taskDate">
+                <input type="time" id="taskTime">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+            <ul class="task-list" id="taskList">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+
+        <!-- Settings Section -->
+        <div id="settings" class="section hidden">
+            <h2>Settings</h2>
+            <p>Configure preferences...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
