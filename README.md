@@ -1,6 +1,7 @@
 # Task Tracker
 
-# Check the site at this link
+# Explore TaskTracker in Action
+Check out the live demo and see how TaskTracker can help you organize and manage your tasks efficiently. Visit the site at the following link:
 https://krishna-krish3.github.io/Task-Tracker/
 
 ## Overview
